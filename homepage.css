@@ -1,0 +1,127 @@
+:root {
+    /* Cores */
+    --dark-blue: #16213E;
+    --blue: #0F3460;
+    --purple: #533483;
+    --pink: #E94560;
+    --white: #FFFFFF;
+    --black: #000000;
+
+    /*Fonte*/
+    --font-press-start: 'Press Start 2P', sans-serif;
+    --fonte-poppins: 'Poppins', sans-serif;
+    --thin: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+}
+/* body{
+    position: relative;
+    overflow: visible;
+} 
+header{
+    position: sticky;
+    top: 0;
+} */
+
+
+/* -------------- NAVBAR STYLES -------------- */
+
+.main-site{
+    position: relative;
+    overflow: visible;
+    margin: 0;
+}
+.header-navy{
+    position: sticky;
+    top: 0;
+}
+.navbar {
+  background-color: var(--purple);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box;
+  max-height: 75px;
+}
+.logo-wrap{
+    display: flex;
+    align-items: center;
+}
+.logo-wrap img{
+    width: 100px;
+}
+.logo-wrap h1{
+  font-family: var(--font-press-start);
+  font-size: 15px;
+}
+.hamburger{
+    position: relative;
+}
+.hamb-menu{
+    width: 25px;
+}
+.hamb-content{
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background-color: var(--white);
+    border: 2px solid var(--pink);
+    right: 0;
+}
+.hamb-content a{
+    color: var(--black);
+    text-decoration: none;
+}
+.hamb-content a:hover{
+    text-decoration: underline;
+}
+.hamburger:hover .hamb-content{
+    display: block;
+}
+
+
+/* -------------- Body -------------- */
+
+.main-form{
+    margin: 10px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+}
+.form-body{
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid var(--pink);
+    border-radius: 15px;
+}
+.form-img{
+    height: 15px;
+}
+
+
+/* -------------- Media Querry -------------- */
+
+@media (min-width: 768px) {
+    .hamb-content {
+        display: inline-block;
+        position: relative;
+        background-color: transparent;
+        border: none;
+    }
+    .hamb-content li{
+        display: inline-block;
+        margin: 0 20px;
+    }
+    .hamb-content a{
+        color: var(--white);
+    }
+    .hamb-menu{
+        display:none;
+    }
+
+}

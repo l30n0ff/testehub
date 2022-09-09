@@ -89,6 +89,12 @@ header{
 .main-form{
     margin: 10px;
 }
+/* .h3-main{
+    justify-content: center;
+}
+.p-main{
+    font: var(--font-press-start);
+} */
 .card{
     display: flex;
     justify-content: center;
